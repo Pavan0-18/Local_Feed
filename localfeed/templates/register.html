@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <h2>Register</h2>
+  <form id="register-form">
+    <input type="text" id="username" placeholder="Username" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <input type="text" id="location" placeholder="Location (e.g. 500081)" required><br>
+    <button type="submit">Register</button>
+  </form>
+  <p id="msg"></p>
+
+  <script src="{% static 'js/register.js' %}"></script>
+</body>
+</html>

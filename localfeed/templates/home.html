@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <h2>Welcome to LocalFeed</h2>
+  <p>You are logged in!</p>
+  <button onclick="logout()">Logout</button>
+
+  <script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>
