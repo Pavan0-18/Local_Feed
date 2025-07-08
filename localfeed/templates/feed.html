@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalFeed</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <h2>Welcome to LocalFeed 📍</h2>
+
+  <form id="post-form">
+    <input type="text" id="title" placeholder="Title" required><br>
+    <textarea id="content" placeholder="Write something..." required></textarea><br>
+    <button type="submit">Post</button>
+  </form>
+
+  <h3>Your Local Feed:</h3>
+  <div id="feed-container"></div>
+
+  <button onclick="logout()">Logout</button>
+
+  <script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>
